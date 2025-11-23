@@ -54,7 +54,7 @@ html, body, [class*="css"]  {
 # =====================================================
 # 1. Load trained model
 # =====================================================
-MODEL_PATH = r"E:\Spyderdata\Spyderdata\soilcrete_gui_model.pkl"
+MODEL_PATH = "soilcrete_gui_model.pkl"
 gui_info = joblib.load(MODEL_PATH)
 
 gbr  = gui_info["gbr"]
@@ -185,4 +185,5 @@ with col_right:
 
     else:
         st.info("Enter parameters on the left and click **Predict**.")
+
 
